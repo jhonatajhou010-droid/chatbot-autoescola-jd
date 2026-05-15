@@ -7,6 +7,8 @@ html = """
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <title>IA Autoescola JD</title>
 
@@ -20,6 +22,7 @@ body{
 }
 
 .chat{
+    width:100%;
     max-width:850px;
     margin:auto;
     height:100vh;
@@ -48,9 +51,10 @@ body{
     padding:14px 18px;
     border-radius:18px;
     margin-bottom:14px;
-    max-width:75%;
+    max-width:90%;
     line-height:1.5;
     white-space:pre-line;
+    font-size:17px;
 }
 
 .bot{
@@ -75,10 +79,10 @@ form{
 
 input{
     flex:1;
-    padding:15px;
+    padding:18px;
     border-radius:14px;
     border:none;
-    font-size:16px;
+    font-size:17px;
     outline:none;
 }
 
@@ -86,21 +90,58 @@ button{
     background:#facc15;
     color:#111827;
     border:none;
-    padding:15px 22px;
+    padding:18px 24px;
     border-radius:14px;
     font-weight:bold;
     cursor:pointer;
+    font-size:17px;
 }
 
 .whatsapp{
     display:inline-block;
     background:#22c55e;
     color:white;
-    padding:12px 16px;
+    padding:14px 18px;
     border-radius:12px;
     text-decoration:none;
     font-weight:bold;
     margin-top:8px;
+}
+
+@media(max-width:768px){
+
+    .chat{
+        height:100dvh;
+    }
+
+    .topo{
+        font-size:20px;
+        padding:16px;
+    }
+
+    .conversa{
+        padding:14px;
+    }
+
+    .mensagem{
+        font-size:16px;
+        max-width:92%;
+    }
+
+    form{
+        padding:12px;
+        gap:8px;
+    }
+
+    input{
+        font-size:16px;
+        padding:16px;
+    }
+
+    button{
+        font-size:16px;
+        padding:16px 18px;
+    }
 }
 
 </style>
